@@ -14,6 +14,7 @@ alias dmesg='dmesg -HL'
 alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -I'
+alias vimrc='$EDITOR ~/.vimrc'
 
 # source /usr/share/doc/pkgfile/command-not-found.zsh
 
