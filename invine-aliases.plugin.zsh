@@ -1,4 +1,4 @@
-export LESSOPEN="| $PATH/source-highlight-esc.sh %s"
+export LESSOPEN="| source-highlight-esc.sh %s"
 export LESS='-R '
 export GREP_COLORS="mt=01;33"
 export EDITOR="vim"
