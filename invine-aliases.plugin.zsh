@@ -1,5 +1,8 @@
-export LESSOPEN="| source-highlight-esc.sh %s"
-export LESS='-R '
+if [ -e source-highlight-esc.sh ]
+then
+    export LESSOPEN="| source-highlight-esc.sh %s"
+    export LESS='-R '
+fi
 export GREP_COLORS="mt=01;33"
 export EDITOR="vim"
 
