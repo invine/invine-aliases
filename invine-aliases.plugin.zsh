@@ -19,6 +19,7 @@ alias mv='mv -i'
 alias rm='rm -I'
 alias vimrc='${=EDITOR} ~/.config/nvim/init.vim'
 alias vim=nvim
+alias help=tldr
 
 # source /usr/share/doc/pkgfile/command-not-found.zsh
 
