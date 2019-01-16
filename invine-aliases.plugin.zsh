@@ -4,7 +4,7 @@ then
     export LESS='-R '
 fi
 export GREP_COLORS="mt=01;33"
-export EDITOR="vim"
+export EDITOR="nvim"
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
@@ -17,7 +17,8 @@ alias dmesg='dmesg -HL'
 alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -I'
-alias vimrc='${=EDITOR} ~/.vimrc'
+alias vimrc='${=EDITOR} ~/.config/nvim/init.vim'
+alias vim=nvim
 
 # source /usr/share/doc/pkgfile/command-not-found.zsh
 
