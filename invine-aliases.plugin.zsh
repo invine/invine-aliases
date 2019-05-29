@@ -3,10 +3,18 @@ then
     export LESSOPEN="| source-highlight-esc.sh %s"
     export LESS='-R '
 fi
+
 export GREP_COLORS="mt=01;33"
 export EDITOR="nvim"
 
-alias ls='ls --color=auto'
+
+if [ -e /usr/bin/lsd ]
+then
+    alias ls='lsd'
+else
+    alias ls='ls --color=auto'
+fi
+
 alias grep='grep --color=auto'
 alias mkdir='mkdir -p -v'
 alias nn='nano -w'
