@@ -11,6 +11,7 @@ export EDITOR="nvim"
 if [ -e /usr/bin/lsd ]
 then
     alias ls='lsd'
+    alias la='lsd -laFh'
 else
     alias ls='ls --color=auto'
 fi
