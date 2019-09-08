@@ -7,7 +7,6 @@ fi
 export GREP_COLORS="mt=01;33"
 export EDITOR="nvim"
 
-
 if [ -e /usr/bin/lsd ]
 then
     alias ls='lsd'
@@ -18,8 +17,6 @@ fi
 
 alias grep='grep --color=auto'
 alias mkdir='mkdir -p -v'
-alias nn='nano -w'
-alias snn='sudo nano -w'
 alias svim='sudo vim'
 alias ping='ping -c 5'
 alias dmesg='dmesg -HL'
