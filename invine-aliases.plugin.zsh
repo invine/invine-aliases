@@ -53,3 +53,8 @@ bindkey -M emacs '^N' history-substring-search-down
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 
+# tldr for Android
+if [ $(uname -o) '==' 'Android' ];
+then
+    export TLDR_OS=linux
+fi
