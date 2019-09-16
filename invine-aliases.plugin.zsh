@@ -7,7 +7,7 @@ fi
 export GREP_COLORS="mt=01;33"
 export EDITOR="nvim"
 
-if [ -e /usr/bin/lsd ]
+if (( $+commands[lsd] ));
 then
     alias ls='lsd'
     alias la='lsd -laFh'
