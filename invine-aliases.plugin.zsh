@@ -40,3 +40,10 @@ if [ $(uname -o) '==' 'Android' ];
 then
     export TLDR_OS=linux
 fi
+
+# yadm aliases
+alias yadma='yadm add'
+alias yadmc='yadm commit'
+alias yadmp='yadm push'
+alias yadml='yadm pull'
+alias yadmst='yadm status'
