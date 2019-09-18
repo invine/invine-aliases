@@ -51,3 +51,6 @@ alias yadmd='yadm diff'
 
 # source zshrc
 alias srcz='source ~/.zshrc'
+
+# remove fd alias
+unalias fd
