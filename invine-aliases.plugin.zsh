@@ -48,3 +48,6 @@ alias yadmp='yadm push'
 alias yadml='yadm pull'
 alias yadmst='yadm status'
 alias yadmd='yadm diff'
+
+# source zshrc
+alias srcz='source ~/.zshrc'
