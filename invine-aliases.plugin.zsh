@@ -34,6 +34,7 @@ bindkey "${terminfo[kdch1]}" delete-char
 
 # bind jj to ESC
 bindkey "jj" vi-cmd-mode
+bindkey "bb" vi-cmd-mode
 
 # tldr for Android
 if [ $(uname -o) '==' 'Android' ];
