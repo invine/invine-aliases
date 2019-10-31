@@ -24,6 +24,7 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -I'
 alias vimrc='${=EDITOR} ~/.config/nvim/init.vim'
+alias tmuxrc='${=EDITOR} ~/.tmux.conf'
 alias vim=nvim
 alias help=tldr
 
@@ -42,15 +43,17 @@ then
 fi
 
 # yadm aliases
-alias yadma='yadm add'
-alias yadmc='yadm commit'
-alias yadmp='yadm push'
-alias yadml='yadm pull'
-alias yadmst='yadm status'
-alias yadmd='yadm diff'
+alias yd='yadm'
+alias yda='yadm add'
+alias ydaa='yadm status --short | awk '\''{print $2}'\'' | xargs yadm add'
+alias ydc='yadm commit'
+alias ydp='yadm push'
+alias ydl='yadm pull'
+alias ydst='yadm status'
+alias ydd='yadm diff'
 
 # source zshrc
-alias srcz='source ~/.zshrc'
+alias zshrl='source ~/.zshrc'
 
 # remove fd alias
 unalias fd
