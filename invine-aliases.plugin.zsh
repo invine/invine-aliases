@@ -63,5 +63,5 @@ alias zshrl='source ~/.zshrc'
 unalias fd
 
 gpsf() {
-     for d in ./*/ ; do (echo "$d" && cd "$d" && git checkout master && git pull --short); done
+     for d in ./*/ ; do (echo "$d" && cd "$d" && git checkout master && git pull -q); done
 }
