@@ -46,7 +46,7 @@ fi
 # yadm aliases
 alias yd='yadm'
 alias yda='yadm add'
-alias ydaa='yadm status --short | awk '\''{print $2}'\'' | xargs yadm add'
+alias ydaa='yadm status --short | awk '\''{print $2}'\'' | xargs yadm add -v'
 alias ydc='yadm commit'
 alias ydd='yadm diff'
 alias ydp='yadm push'
