@@ -48,13 +48,20 @@ alias yd='yadm'
 alias yda='yadm add'
 alias ydaa='yadm status --short | awk '\''{print $2}'\'' | xargs yadm add'
 alias ydc='yadm commit'
+alias ydd='yadm diff'
 alias ydp='yadm push'
 alias ydl='yadm pull'
+alias ydll='yadm stash push && yadm pull && yadm pop'
 alias ydst='yadm status'
-alias ydd='yadm diff'
+alias ydsta='yadm stash push'
+alias ydstp='yadm stash pop'
 
 # source zshrc
 alias zshrl='source ~/.zshrc'
 
 # remove fd alias
 unalias fd
+
+gpsf() {
+     for d in ./*/ ; do (echo "$d" && cd "$d" && git checkout master && git pull --short); done
+}
