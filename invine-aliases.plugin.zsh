@@ -16,7 +16,7 @@ else
 fi
 
 alias grep='grep --color=auto'
-alias G='| rg'
+# alias G='| rg'
 alias mkdir='mkdir -p -v'
 alias svim='sudo vim'
 alias ping='ping -c 5'
