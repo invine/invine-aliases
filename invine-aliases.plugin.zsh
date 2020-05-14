@@ -28,6 +28,7 @@ alias vimrc='${=EDITOR} ~/.config/nvim/init.vim'
 alias tmuxrc='${=EDITOR} ~/.tmux.conf'
 alias vim=nvim
 alias help=tldr
+alias vncd='ssh -L 5900:127.0.0.1:5900 everland x11vnc -display :0'
 
 # fix home, delete and return bindings
 bindkey "${terminfo[khome]}" beginning-of-line
