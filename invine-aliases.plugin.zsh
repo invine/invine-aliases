@@ -62,7 +62,7 @@ alias ydstp='yadm stash pop'
 alias zshrl='source ~/.zshrc'
 
 # remove fd alias
-unalias fd
+# unalias fd
 
 gls() {
      for d in ./*/ ; do (echo "$d" && cd "$d" && git checkout master && git pull -q); done
