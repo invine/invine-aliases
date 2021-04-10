@@ -63,6 +63,9 @@ alias zshrl='source ~/.zshrc'
 
 # remove fd alias
 # unalias fd
+alias fixconky="killall conky && conky &;disown conky"
+alias gmm='git merge master'
+alias gma='git merge --abort'
 
 gls() {
      for d in ./*/ ; do (echo "$d" && cd "$d" && git checkout master && git pull -q); done
