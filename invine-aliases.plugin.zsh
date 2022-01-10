@@ -26,7 +26,12 @@ alias mv='mv -i'
 alias rm='rm -I'
 alias vimrc='${=EDITOR} ~/.config/nvim/init.vim'
 alias tmuxrc='${=EDITOR} ~/.tmux.conf'
-alias vim=nvim
+if [[ $(uname -n) = 'ws-9078' ]];
+then
+    alias vim=~/nvim.appimage
+else
+    alias vim=nvim
+fi
 alias help=tldr
 alias vncd='ssh -L 5900:127.0.0.1:5900 everland x11vnc -display :0'
 
@@ -50,6 +55,7 @@ alias yd='yadm'
 alias yda='yadm add'
 alias ydaa='yadm status --short | awk '\''{print $2}'\'' | xargs yadm add -v'
 alias ydc='yadm commit'
+alias ydco='yadm checkout'
 alias ydd='yadm diff'
 alias ydp='yadm push'
 alias ydl='yadm pull'
