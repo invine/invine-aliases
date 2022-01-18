@@ -5,7 +5,7 @@ then
 fi
 
 export GREP_COLORS="mt=01;33"
-export EDITOR="nvim"
+export EDITOR="lvim"
 
 if (( $+commands[lsd] ));
 then
@@ -30,7 +30,7 @@ if [[ $(uname -n) = 'ws-9078' ]];
 then
     alias vim=~/nvim.appimage
 else
-    alias vim=nvim
+    alias vim=lvim
 fi
 alias help=tldr
 alias vncd='ssh -L 5900:127.0.0.1:5900 everland x11vnc -display :0'
