@@ -7,6 +7,11 @@ fi
 export GREP_COLORS="mt=01;33"
 export EDITOR="lvim"
 
+if [[ $(uname -s) = 'Darwin' ]];
+then
+  export PATH=$PATH:/Users/invine/.local/bin
+fi
+
 if (( $+commands[lsd] ));
 then
     alias ls='lsd'
