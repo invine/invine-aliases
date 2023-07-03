@@ -33,7 +33,7 @@ else
     alias vim=lvim
 fi
 alias help=tldr
-alias vncd='ssh -L 5900:127.0.0.1:5900 everland x11vnc -display :0'
+# alias vncd='ssh -L 5900:127.0.0.1:5900 everland x11vnc -display :0'
 
 # fix home, delete and return bindings
 bindkey "${terminfo[khome]}" beginning-of-line
@@ -69,7 +69,7 @@ alias zshrl='source ~/.zshrc'
 
 # remove fd alias
 # unalias fd
-alias fixconky="killall conky && conky &;disown conky"
+# alias fixconky="killall conky && conky &;disown conky"
 alias gmm='git merge master'
 alias gma='git merge --abort'
 
